@@ -1,0 +1,35 @@
+<h2>Hodim ma'lumotlari☻</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Ism-familyasi</th>
+            <th>Telefon No'meri</th>
+            <th>user/login</th>
+            <th>Yoshi</th>
+            <th>Bo'lim nomi</th>
+            <th>Rasmi</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                 {{oneperson.name}}
+            </td>
+            <td>
+                 {{oneperson.phone}}
+            </td>
+            <td>
+                {{oneperson.user.login}}
+            </td>
+            <td>
+                {{oneperson.age}}
+            </td>
+            <td>
+                {{oneperson.department.name}}
+            </td>
+            <td>
+             <img src="{{oneperson.photo}}" alt="" width="70">
+            </td>
+        </tr>
+    </tbody>
+</table>

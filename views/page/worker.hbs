@@ -1,0 +1,43 @@
+<h1>Hodimlar☻</h1>
+
+<h2><a href="/addworker">Yangi Hodim☻</a></h2>
+<table class="table">
+    <thead>
+         <tr>
+             <th>_id</th>
+             <th>Ism-Familya</th>
+             <th>Telefon</th>
+             <th>Bo'limi</th>
+             <th>user/login</th>
+             <th>Yoshi</th>
+             <th>Rasmi</th>
+         </tr>
+    </thead>
+    <tbody>
+        {{#each worker}}
+        <tr>
+            <td>
+                <a href="/workers/{{this._id}}">{{this._id}}</a>
+            </td>
+            <td>
+                 {{this.name}},
+            </td>
+            <td>
+                 {{this.phone}},
+            </td>
+            <td>
+                <a href="/depart">{{this.department.name}}</a>
+            </td>
+            <td>
+                {{this.user.login}}
+            </td>
+            <td>
+                {{this.age}}
+            </td>
+            <td>
+                <img src="/workers/{{this.photo}}" alt="" width="70">
+            </td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>

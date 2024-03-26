@@ -1,6 +1,10 @@
 const {Schema,model} = require('mongoose')
 
 const worker = new Schema({
+    user:{
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
     name:{
         type: String,
         required: true  
@@ -25,11 +29,11 @@ const worker = new Schema({
         ref: 'Department',
         required: true
     },
-    photo: String,
-    createdAt:  Date,
-    status: {
-        type: Boolean,
-        default: true
-    }
+      photo: String,
+       createdAt:  Date,
+       status: {
+           type: Boolean,
+           default: true
+       }
 })
 module.exports = model('Worker',worker)

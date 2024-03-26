@@ -1,0 +1,30 @@
+<h1>Yangi hodim qo'shish</h1>
+  
+  <form action="/addworker" enctype="multipart/form-data" method="post">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Ism-familyasi</label>
+        <input type="text" class="form-control" name="name" placeholder="nomini yozing">
+    </div>
+    <div class="mb-3">
+        <label for="phone" class="form-label">Telefon raqami</label>
+        <input type="text" name="phone" data-maska="+998-(##) ###-##-##"
+        class="form-control" name="phone" required>
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Bo'lim nomi</label>
+        <input type="text" class="form-control" name="department" placeholder="bo'lim nomini yozing">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">User logini</label>
+        <input type="text" class="form-control" name="login" placeholder="login yozing">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Yoshi</label>
+        <input type="number" class="form-control" name="age" placeholder="yoshingizni kiriting">
+    </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Rasmi</label>
+        <input type="file" class="form-control" name="photo" placeholder="rasm yuklang">
+    </div>
+       <button class="btn btn-primary" type="submit">Submit</button>
+  </form>
